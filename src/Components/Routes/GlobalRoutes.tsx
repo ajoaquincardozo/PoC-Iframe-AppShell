@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 const ProductCatalog = () => <>ProductCatalog</>
 const ProductDetail = () => <>ProductDetail</>
-const Login = () => <>Login</>
+import Login from '../Login'
 
 function GlobalRoutes() {
   return (
