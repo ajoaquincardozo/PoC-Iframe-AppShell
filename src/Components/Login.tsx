@@ -18,7 +18,7 @@ export default function Login() {
         }
     })
 
-    const onSigInClick = (e) => {
+    const onSigInClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
 
         authenticate(user, password)
