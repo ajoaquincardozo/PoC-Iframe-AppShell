@@ -29,3 +29,13 @@ export const navigateInIframe = (iframe: HTMLIFrameElement, config: NavigateInIn
     const { baseUrl, route } = config;
     iframe.src = `${baseUrl}${route}`;
 }
+
+export enum MessageEventDataAction {
+    addProduct = "ADD_PRODUCT",
+    showDetail = "SHOW_DETAIL"
+}
+
+export type MessageEventData<TPayload> = {
+    action: MessageEventDataAction
+    payload: TPayload
+}
