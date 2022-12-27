@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Login from '../Login'
-import ProductCatalog from "./Microfrontends/ProductCatalog";
-import ProductDetail from "./Microfrontends/ProductDetail";
+import ProductCatalog from "../Microfrontends/ProductCatalog";
+import ProductDetail from "../Microfrontends/ProductDetail";
 
 function GlobalRoutes() {
   return (

@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="mt-10 text-3xl mx-auto max-w-6xl">
         {auth && <Header/>}
-          <div className="my-10">
+          <div className="my-10 h-screen">
             <GlobalRoutes/>
           </div>
         {auth && <Footer/>}
