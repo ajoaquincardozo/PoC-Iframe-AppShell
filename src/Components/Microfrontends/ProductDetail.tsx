@@ -6,7 +6,7 @@ import { AllowedDomainType } from "../Routes";
 export default function ProductDetail() {
     const { productId } = useParams();
     const iframeRef = useRef<HTMLIFrameElement>(null);
-    const baseUrl: AllowedDomainType = AllowedDomainType.development;
+    const baseUrl: AllowedDomainType = AllowedDomainType.production;
 
     useEffect(() => {
         navigateInIframe(iframeRef.current as HTMLIFrameElement, {

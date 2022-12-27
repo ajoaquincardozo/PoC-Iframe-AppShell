@@ -6,7 +6,7 @@ import { AllowedDomains, AllowedDomainType } from "../Routes";
 export default function ProductCatalog() {
   const navigate = useNavigate();
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const baseUrl: AllowedDomainType = AllowedDomainType.development;
+  const baseUrl: AllowedDomainType = AllowedDomainType.production;
 
   const handleMessageIFrame = (event: MessageEvent) => {
     if (AllowedDomains.includes(event.origin) && event.source === iframeRef.current?.contentWindow) {
