@@ -24,6 +24,7 @@ export default function ProductCatalog() {
           break;
 
         default:
+          console.log("default", event.data);
           break;
       }
     }
